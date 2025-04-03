@@ -11,6 +11,9 @@ builder.Services.AddControllers();
 
 var app = builder.Build();
 
+// this alone will enable use wwwroot file
+app.UseStaticFiles();
+
 //// enable endpoints
 //app.UseRouting();
 //app.UseEndpoints(endpoits =>
